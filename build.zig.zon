@@ -1,0 +1,21 @@
+.{
+    .name = .agallet,
+    .version = "0.0.0",
+    .fingerprint = 0x7ed1a90877cdfdcd, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.14.1",
+    .dependencies = .{
+        .sdl = .{
+            .url = "git+https://github.com/castholm/SDL.git#5c55c894039a15a16bb7c89b2d6438e158e86ef1",
+            .hash = "sdl-0.2.5+3.2.18-7uIn9FwZfwHKOwSubcg5_CiW4fXag5IIsiV_jnLdkpDM",
+        },
+        .cimgui_zig = .{
+            .url = "git+https://github.com/tiawl/cimgui.zig#46516e2f473547b8075b58dfbe834003776c3527",
+            .hash = "cimgui_zig-1.0.0-2XubkrhrVQB_fopoxHDpg1cShqH3DOhE24EhO_aTendp",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
